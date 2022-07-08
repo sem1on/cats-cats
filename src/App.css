@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');   
+ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+body {
+    font-family: 'Roboto';
+    background-color: #E5E5E5;
+}
+
+.navbar {
+    width: 100vw;
+    height: 64px;
+    background-color: #2196F3;
+    padding: 0 62px;
+    box-shadow: 0px 0px 10px rgb(81, 80, 80);
+}
+
+.navbar ul {
+    padding: 0;
+    width: 100%;
+}
+
+.navbar li {
+    display: inline;
+    
+}
+.navbar a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 120px;
+    text-align: center;
+    height: 64px;
+}
+
+.navbar-btn {
+    padding: 23px 15px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+    background: #1E88E5;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.nav-dis-btn {
+    height: 100%;
+    padding: 23px 15px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+    background: #2196F3;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.cats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 42px 0;
+    padding-left: 62px;
+    padding-right: 20px;
+}
+
+.cats-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    gap: 44px;
+}
+
+.catslist-btn {
+    height: 100%;
+    margin: 40px 0;
+    padding: 23px 15px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+    border-radius: 4px;
+    background: #1E88E5;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.end-cats {
+    margin-top: 40px;
+    font-size: 22px;
+    color: #1E88E5;
+}
+
+.catslist-btn:hover {
+    transform: scale(1.05);
+}
+
+.cats-item {
+    position: relative;
+    width: 225px;
+    height: 225px;
+    transition: all 1s;
+}
+
+.cats-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden; 
+}
+
+.cats-item:hover .hearts {
+    display: block;
+}
+.cats-item:hover .heart-like {
+    display: block;
+}
+.cats-item:hover .hearts-like {
+    display: block;
+}
+
+.hearts {
+    display: none;
+    position: absolute;
+    right: 19px;
+    bottom: 25px;
+    cursor: pointer;
+}
+
+.heart-hover{
+    display: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    cursor: pointer;
+}
+
+.heart-like {
+    display: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    cursor: pointer;
+}
+
+.hearts-like {
+    display: none;
+    position: absolute;
+    right: 19px;
+    bottom: 25px;
+    cursor: pointer;
+}
+
+.hearts:hover .heart-hover{
+    display: block;
+}
+
+.cats-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgb(81, 80, 80);
+}
+
+@media screen and (max-width: 400px){
+    .navbar {
+        padding: 0;
+    }
+    .cats-container {
+        padding-left: 31px;
+    }
+}
